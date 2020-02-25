@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Multiple Approaches to Layout</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" href="screen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+<header id="header">
+  <h1>Multiple Approaches to Layout</h1>
+</header>
+<main id="content">
+<section id="cooking">
+  <h2>I Love to Cook</h2>
+  <figure class="photo">
+    <img src="pasta-puttanesca.jpg" alt="Closeup photo of pasta puttanesca" />
+    <figcaption>
+      This is a closeup shot of a dish I made called pasta puttanesca, which is usually made with a
+      mix of minced olives (I used Kalamata and a few other varieties of olive for this one) and
+      fresh tomatoes.
+    </figcaption>
+  </figure>
+  <!--
+    I know. Believe me, I know. I'm not a huge fan of putting a <div> here or anywhere, but it is
+    the only block-level element that can group conent *without* the need for a heading.
+
+    <div> elements should always be a last resort: only once you've made sure that you cannot make
+    use of more semantic sectioning elements like <article>, <section>, <aside>, or even <main>
+    should you resort to one.
+
+    I've assigned this one a class of 'copy' because I mean it in the sense of "running copy," which
+    is sometimes how the text of a piece is referred to.
+  -->
+  <div class="copy">
+    <p>
+      Cooking is one of my very favorite ways to enjoy myself, take care of friends and family, and
+      feel like I’m doing something healthy and worthwhile. I cook almost every night of the week.
+      If I find myself eating takeout or going out to a restaurant more than once a week, I tend to
+      feel almost guilty.
+    </p>
+    <p>
+      While in the wintertime I enjoy cooking things that take all day, like stews, I’m also an
+      all-seasons griller and barbecuer. There’s something about cooking over an open fire that I
+      just cannot resist. I love to grill fish, chicken, pork, and beef (and the occasional sliced
+      squash or portabella mushroom for my vegetarian friends). But my real passion is for barbecue:
+      slowly smoking pork shoulders, pork or beef ribs, sausages, or beef brisket for hours and
+      hours. That’s especially enjoyable in the warmer spring and summer months, but I cook outdoors
+      regardless of the weather: beer-can chickens in the middle of a polar vortex, or smoked
+      sauerkraut and bratwurst, knackwurst, and Thüringer in the middle of a daylong rainstorm.
+    </p>
+  </div>
+</section>
+
+<footer id="footer">
+  <small>Site content and design © Karl Stolley.</small>
+</footer>
+</body>
+</html>
