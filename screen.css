@@ -143,6 +143,12 @@ img,audio,video {
     display: flex;
     align-items: flex-end;
   }
+  .grid .photo {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-column-gap: 1.2222222222em; /* 22px */
+    align-items: end;
+  }
   .flex .photo img {
     flex: 5 0 100px;
     margin: 0;
@@ -151,12 +157,18 @@ img,audio,video {
     float: left;
     width: 55.55555556%; /* 5 / 9 */
   }
+  .grid .photo img {
+    width: auto;
+  }
   .os .photo figcaption {
     margin-left: 58%;
   }
   .flex .photo figcaption {
     flex: 4 0 100px;
     margin-left: 1.5277777778em; /* @supports!! */ /* 22px / 14.4 =  */
+  }
+  .grid .photo figcaption {
+    margin-left: 0; /* @supports!! */
   }
   .os .photo figcaption:after {
     content: "";
