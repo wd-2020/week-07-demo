@@ -151,25 +151,40 @@ img,audio,video {
   }
   .flex .photo img {
     flex: 5 0 100px;
-    margin: 0;
   }
+
+  @supports (display: flex) {
+    .flex .photo img {
+      margin-bottom: 0;
+    }
+    .flex .photo figcaption {
+      margin-left: 1.5277777778em; /* 22px / 14.4 =  */
+    }
+  }
+
   .os .photo img {
     float: left;
     width: 55.55555556%; /* 5 / 9 */
   }
-  .grid .photo img {
-    width: auto;
-  }
+
   .os .photo figcaption {
     margin-left: 58%;
   }
+
   .flex .photo figcaption {
     flex: 4 0 100px;
-    margin-left: 1.5277777778em; /* @supports!! */ /* 22px / 14.4 =  */
   }
-  .grid .photo figcaption {
-    margin-left: 0; /* @supports!! */
+
+  @supports (display: grid) {
+    .grid .photo img {
+      width: auto; /* @supports!! */
+      margin: 0;
+    }
+    .grid .photo figcaption {
+      margin-left: 0; /* @supports!! */
+    }
   }
+
   .os .photo figcaption:after {
     content: "";
     display: block;
