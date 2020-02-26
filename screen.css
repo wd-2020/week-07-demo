@@ -137,6 +137,22 @@ img,audio,video {
   }
 }
 
+/* 640px */
+@media screen and (min-width: 640px) {
+  .os .photo img {
+    float: left;
+    width: 55.55555556%; /* 5 / 9 */
+  }
+  .os .photo figcaption {
+    margin-left: 58%;
+  }
+  .os .photo figcaption:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
 /* 710px || 710 / 16 = 44.375em */
 @media screen and (min-width: 44.375em) {
   html {
