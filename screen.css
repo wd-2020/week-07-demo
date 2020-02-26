@@ -139,12 +139,24 @@ img,audio,video {
 
 /* 640px */
 @media screen and (min-width: 640px) {
+  .flex .photo {
+    display: flex;
+    align-items: flex-end;
+  }
+  .flex .photo img {
+    flex: 5 0 100px;
+    margin: 0;
+  }
   .os .photo img {
     float: left;
     width: 55.55555556%; /* 5 / 9 */
   }
   .os .photo figcaption {
     margin-left: 58%;
+  }
+  .flex .photo figcaption {
+    flex: 4 0 100px;
+    margin-left: 1.5277777778em; /* @supports!! */ /* 22px / 14.4 =  */
   }
   .os .photo figcaption:after {
     content: "";
