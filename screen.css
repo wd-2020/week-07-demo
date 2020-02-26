@@ -99,6 +99,7 @@ img,audio,video {
 
 #cooking {
   background: #9c7b2e;
+  padding: 0.6111111111em; /* 11px */
 }
 /* Modular Styles */
 /* These tend to be:
@@ -108,6 +109,13 @@ img,audio,video {
   - mix of super-simple properties and old-school
     syntax with newer CSS
 */
+
+.photo {
+  margin-bottom: 1.2222222222em; /* 22px */
+}
+.photo img {
+  margin-bottom: 0.6111111111em; /* 11px */
+}
 
 /* State Styles */
 /* These tend to be:
